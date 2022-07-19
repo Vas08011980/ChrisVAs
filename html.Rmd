@@ -1,0 +1,34 @@
+---
+title: "ChrisVas"
+author: "Vas and Chris"
+date: '2022-07-19'
+output: html_document
+---
+
+Setup Importing Packages
+```{r}
+#install.packages("stats4")
+#install.packages("lattice")
+#install.packages("MASS")
+#install.packages("msm")
+#install.packages("polycor")
+library(lavaan)
+library(haven)
+library(semPlot)
+library(stats4)
+library(lattice)
+library(MASS)
+library(msm)
+library(polycor)
+library(psych)
+library(psychotools)
+library(psychTools)
+
+```
+import the data
+```{r echo=FALSE, error=FALSE, warning=FALSE}
+data<-read_sav("IRT_DATA.sav")
+View(data)
+describe(data)
+```
+
